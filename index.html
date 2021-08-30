@@ -7,16 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Document</title>
+    <title>Mountaineer || A Travel Website</title>
   </head>
   <body>
     <header>
-      <h2><a class="site-brand" href="#">Mountain Travel</a></h2>
+      <h2><a class="site-brand" href="#">Mountaineer</a></h2>
       <nav class="navigator">
         <ul>
-          <li><a href="#" class="nav-link">Tours</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#packages" class="nav-link">Tours</a></li>
+          <li><a href="#testimonials" class="nav-link">About</a></li>
           <li><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -25,8 +26,8 @@
     <section class="hero" id="hero">
       <div class="background-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(src/images/mountain-01.jpg)"></div>
         <div class="hero-content-container">
-          <h1>Mountain Travel</h1>
-          <h3>Unmissable Adventure Tours Around The World</h3>
+          <h1>Mountaineer</h1>
+          <h3>Travelers under the sun, from around the world</h3>
           <a href="#" class="btn">Contact Us Today</a>
         </div>
     </section>
@@ -40,10 +41,64 @@
         <li class="small" style="background-image: url('src/images/mountain-01.jpg')"></li>
         <li class="large" style="background-image: url('src/images/mountain-02.jpg')"></li>
         <li class="large" style="background-image: url('src/images/mountain-03.jpg')"></li>
-        <li class="small" style="background-image: url('src/images/mountain-01.jpg')"></li>
+        <li class="small" style="background-image: url('src/images/mountain-04.jpg')"></li>
       </ul>
-
     </section>
+
+    <section class="packages" id="packages">
+      <h3 class="title">Tour Packages</h3>
+      <p>Here's a selection of what we offer for our tours. Each package is tailor made with specific travelers in mind from budget to luxurious. You'll be sure to find a package fit for your needs.</p>
+      <hr>
+
+      <ul class="grid">
+        <li>
+          <i class="fas fa-compass fa-5x"></i>
+          <h4>Guided Trips</h4>
+          <p>We have a crew of incredibly sociable and knowledgable experts in their respective regions. They know the best spots to maximize your best experience.</p>
+        </li>
+        <li>
+          <i class="fas fa-camera fa-5x"></i>
+          <h4>Photo Trips</h4>
+          <p>Do you want to take your time and enjoy the sights? Preserve those memories with our photo tour in one of our mountain buses.</p>
+        </li>
+        <li>
+          <i class="fas fa-bicycle fa-5x"></i>
+          <h4>Biking Trips</h4>
+          <p>Are you a bike fanatic? Or perhaps an athletic? Come along and ride with us. We provide free lunch as well!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <h3 class="title">Read about our glowing reviews!</h3>
+      <hr>
+      <p class="quote">Man... mountains are so cool. If I could take mountains home, I'd do that in a heartbeat.</p>
+      <p class="author">- Richard Lover</p>
+      <p class="quote">What a wonderful view it was. It was during a sunset and I was eating an ice cream... I love this place. The people guiding us were very cool too, they were incredible knowledgable.</p>
+      <p class="author">- Popoto Peppeppo</p>
+      <p class="quote">Such magnificence! It was their intention!</p>
+      <p class="author">- Gaius Van Baelsar</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3 class="title">Learn More</h3>
+      <p>Want to know about future expeditions and mountain-related events? Perhaps you would like join us on one of our community events? Sign up for our mailing list. You won't receive spam from us, only important information! Unless you really like spam, we enjoy spam musubis here as well.</p>
+      <hr>
+
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <a href="#" class="btn">SUBSCRIBE TO OUR MAILING LIST</a>
+      </form>
+    </section>
+
+    <footer>
+      <p>Images courtesy of <a href="https://unsplash.com/">Unsplash.com</a></p>
+      <ul>
+        <li><a href="#"><i class="fab fa-twitter-square fa-5x"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square fa-5x"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram-square fa-5x"></i></a></li>
+      </ul>
+    </footer>
 
     <script src="src/js/script.js"></script>
   </body>

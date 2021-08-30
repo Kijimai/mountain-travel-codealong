@@ -18,7 +18,7 @@ body {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat; */
-  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a.btn {
@@ -28,6 +28,8 @@ a.btn {
   text-align: center;
   background-color: #3f51b5;
   opacity: 1; 
+  text-decoration: none;
+  color: #fff;
 }
 
 a:hover {
@@ -76,6 +78,21 @@ ul,
   color: #fff;
 }
 
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .navigator ul li {
+    margin: 0 2rem;
+  }
+}
+
 /* Section */
 
 section {
@@ -83,6 +100,23 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 10rem 8rem;
+}
+
+section:not(.hero):nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+h3.title {
+  text-transform: capitalize;
+  font: 700 3.2rem 'Open Sans', sans-serif;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media(max-width: 800px) {
+  section {
+    padding: 5rem 2rem;
+  }
 }
 
 /* Hero Section */
@@ -130,28 +164,55 @@ section {
   font: 400 2rem 'Open Sans', sans-serif;
 }
 
+@media (max-width: 800px) {
+  .hero {
+    min-height: 60rem;
+  }
+
+  .hero h1 {
+    font-size: 4.8rem;
+  }
+
+  .hero h3 {
+    font-size: 2.4rem;
+  }
+
+  .hero a.btn {
+    padding: 1.5rem 4rem;
+  }
+}
+
 /* Destinations Section */
 
 .grid {
-  display: grid;
+  display: flex;
   width: 100%;
-  grid-template-columns: repeat(4, 20rem);
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 hr {
   width: 250px;
   height: 3px;
-  background-color: green;
+  background-color: rgb(119, 119, 119);
   border: 0;
   margin-bottom: 5rem;
 }
 
-.destinations h3.title {
-  text-transform: capitalize;
-  font: 700 3.2rem 'Open Sans', sans-serif;
-  margin-bottom: 3rem;
-  text-align: center;
+.destinations .grid li {
+  height: 35rem;
+  padding: 2rem;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.destinations .grid .large {
+  flex-basis: 70%;
+}
+
+.destinations .grid .small {
+  flex-basis: 30%;
 }
 
 .destinations p {
@@ -162,6 +223,170 @@ hr {
   margin-bottom: 3rem;
   text-align: center;
 }
+
+@media (max-width: 1100px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 50%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .destinations .grid li.small,
+  .destinations .grid li.large {
+    flex-basis: 100%;
+  }
+}
+
+/* Packages Section */
+
+.packages p {
+  font-size: 1.8rem;
+  max-width: 77.5rem;
+  line-height: 2;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.packages .grid li {
+  padding: 5rem;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.packages .grid li i {
+  color: #8c9eff;
+}
+
+.packages .grid h4 {
+  font-size: 3rem;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 800px) {
+  .packages .grid li {
+    flex-basis: 100%;
+    padding: 2rem;
+  }
+}
+
+/* Testimonials Section */
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials .quote {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 4rem 0 2.5rem;
+}
+
+.testimonials .author {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 800px) {
+  .testimonials .quote {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .testimonials .author {
+    font-size: 1.4rem;
+  }
+}
+
+/* Contact Section */
+
+.contact p {
+  font-size: 1.8rem;
+  max-width: 77.5rem;
+  line-height: 2;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+
+.contact form .btn {
+  padding: 1.2rem 3rem;
+  font: 400 2rem 'Open Sans', sans-serif;
+}
+
+.contact form input {
+  padding: 1.5rem;
+  margin-right: 3rem;
+  color: #555;
+  flex-grow: 1; 
+  font-size: 1.6rem;
+}
+
+@media (max-width: 1000px) {
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 2rem 0;
+  }
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #607d8b;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 1.6rem;
+}
+
+footer i {
+  color: #000;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  opacity: 0.6;
+  align-self: center;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: center;
+    margin: 0 0 2rem 0;
+  }
+}
+
+/* Keyframes for Animations */
 
 @keyframes slideFade {
   100% {
