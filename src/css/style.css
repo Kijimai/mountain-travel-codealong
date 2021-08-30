@@ -54,6 +54,7 @@ header {
   text-decoration: none;
 }
 
+ul,
 .navivator {
   list-style: none;
 }
@@ -127,6 +128,39 @@ section {
   color: #fff;
   text-decoration: none;
   font: 400 2rem 'Open Sans', sans-serif;
+}
+
+/* Destinations Section */
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 20rem);
+  justify-items: center;
+}
+
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: green;
+  border: 0;
+  margin-bottom: 5rem;
+}
+
+.destinations h3.title {
+  text-transform: capitalize;
+  font: 700 3.2rem 'Open Sans', sans-serif;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.destinations p {
+  font-size: 1.8rem;
+  max-width: 77.5rem;
+  line-height: 2;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
 @keyframes slideFade {
